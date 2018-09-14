@@ -1,18 +1,13 @@
 "use strict"
 
-
-const age = [
-    "20 years old",
-    "21 years old",
-    "22 years old",
-    "23 years old",
-    "24 years old",
-    "25 years old",
-    "26 years old",
-    "27 years old",
-    "28 years old",
-    "29 years old",
-    "30 years old"
+const hobby = [
+    "JavaScript",
+    "Reading",
+    "Coding",
+    "Travelling",
+    "Cooking",
+    "Painting",
+    "Singing and dancing"
 ]
 const firstButton = document.querySelector("#first");
 const lastButton = document.querySelector("#last");
@@ -74,8 +69,16 @@ Student.prototype.toString = function () {
 
 //clone sth!!!!!!!
 function displayStudents(toDisplay) {
+
+
+
     tableBody.innerHTML = "";
     toDisplay.forEach((elem, index) => {
+        const random = parseInt(Math.random() * 10 + 19);
+
+        const randomHobby = Math.floor(Math.random() * (hobby.length - 1));
+
+
         tableBody.innerHTML += `
             <tr>
                
@@ -83,6 +86,12 @@ function displayStudents(toDisplay) {
              
                 <td>
                     <button class='delete-btn' type='button' data-target='${index}'>X</button>
+                </td>
+                <td>
+                <span>${random}</span>
+                </td>
+                <td>
+                <span>${hobby[randomHobby]}</span>
                 </td>
             </tr>
         `;
