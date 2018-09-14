@@ -1,0 +1,94 @@
+body {
+    background-image: linear-gradient(#A6E9EA, white);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+}
+
+.buttonsbox {
+    display: block;
+    margin: auto;
+}
+
+#first,
+#last,
+#age,
+#hobby {
+
+    height: 50px;
+    font-family: "Casual Softcore";
+    font-size: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 50px;
+}
+
+#first {
+    background-color: #8FD7E8;
+
+}
+
+#age {
+    background-color: #8FD7E8;
+}
+
+#last,
+#hobby {
+    background-color: #259DE8;
+}
+
+#first:hover,
+#age:hover {
+    box-shadow: 0;
+    text-decoration: underline;
+}
+
+#last:hover {
+    box-shadow: 0;
+    text-decoration: underline;
+}
+
+
+
+tr:nth-child(even) {
+    background: #A6E9EA;
+}
+
+tr:nth-child(odd) {
+    background: #D0F1F2;
+}
+
+td button {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 12px;
+    font-size: 15px;
+
+
+
+}
+
+
+#bigContainer {
+    width: 550px;
+    height: 540px;
+    margin-left: 50px;
+    border: 5px solid white;
+    overflow: scroll;
+}
+
+td {
+    font-size: 20px;
+    text-align: center;
+}
+
+.delete-btn {
+    color: white;
+    background-color: #259DE8;
+    font-weight: bold;
+    transition: 1s;
+
+}
