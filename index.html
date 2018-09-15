@@ -13,34 +13,50 @@
 <body>
 
     <h1>Interactive student list</h1>
-    <div class="info">
+    <div class="info" style="display:none">
 
     </div>
     <br />
     <div class="buttonsbox"></div>
     <button id="first">Sort by First Name</button>
-    <button id="last">Sort by Last Name</button>
-    <button id="age">Filter by age</button>
-    <button id="hobby">Filter by hobby</button>
-    <br /><br />
+    <button id="last">Sort by Last Name</button><br><br>
+    <!-- <div id="filters">
+        Filter by hobby
+        <a href="#" data-filter="all">all</a>
+        <a id="js" href="#" data-filter="JavaScript and Coding">JavaScript and Coding</a>
+        <a href="#" data-filter="Reading">Reading</a>
+        <a href="#" data-filter="Travelling">Travelling</a>
+        <a href="#" data-filter="Singing and dancing">Singing and dancing</a>
+
+    </div> -->
+
 
     <div id="bigContainer">
         <table id="tablebox">
-            <tr>
+            <thead>
+                <tr>
+                    <th>Full name</th>
 
-                <th id="names">Name</th>
+                    <th>Hobby</th>
+                    <th>Details</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
 
-
-                <th>Remove <br> student</th>
-                <th>Age</th>
-
-
-            </tr>
 
             <tbody class="table-body">
-                <!-- insert table rows here -->
+
+                <!-- here comes he table -->
             </tbody>
         </table>
+        <!-- <template id="student_template">
+            <tr>
+                <td data-firstname>FIRSTNAME</td>
+                <td data-lastname>LASTNAME</td>
+                <td data-hobby>hobby</td>
+                <td data-delete>X</td>
+            </tr>
+        </template> -->
     </div>
 
 
