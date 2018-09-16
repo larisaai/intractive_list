@@ -5,28 +5,32 @@ body {
 
 h1 {
     text-align: center;
-    margin: 0px;
+    margin: auto;
     margin-top: 15px;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .buttonsbox {
     display: block;
     margin: auto;
+
 }
 
 #first,
 #last {
 
-    height: 50px;
-    font-family: "Casual Softcore";
-    font-size: 20px;
+    height: 30px;
+    font-size: 12px;
     border-radius: 12px;
     font-weight: bold;
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 50px;
+
+
 }
 
+/* 
 #filters {
     height: 50px;
     font-size: 20px;
@@ -39,11 +43,11 @@ h1 {
     margin: 7px;
     font-size: 20px;
     color: #259DE8;
-}
+} */
 
-#filters a:hover {
+/* #filters a:hover {
     text-decoration: underline;
-}
+} */
 
 #first {
     background-color: #8FD7E8;
@@ -84,48 +88,209 @@ tr:nth-child(odd) {
 
 td button {
     background: rgba(0, 0, 0, 0);
-    border-radius: 12px;
-    font-size: 15px;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 2px;
+    height: 30px;
+
 }
 
 
 #bigContainer {
-    width: 720px;
-    height: 540px;
-    margin-left: 50px;
-    border: 5px solid white;
+    width: 300px;
+    height: 450px;
+    border: 6px dotted #8FD7E8;
     overflow: scroll;
 }
 
 td {
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
-    height: 50px;
+    height: 25px;
+    width: 120px;
     padding: 5px;
 
+
+}
+
+#headers {
+    width: 20px;
 }
 
 .delete-btn {
     background: rgba(0, 0, 0, 0);
     border-radius: 12px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 th {
-    height: 40px;
+    height: 20px;
+    border-bottom: 5px dotted #8FD7E8;
 
 }
 
 .info {
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 12px;
     position: fixed;
     text-align: center;
-    padding: 10px;
+    bottom: 0px;
+    background-color: #A6E9EA;
+    border: 2px dotted #D0F1F2;
+    margin-left: -5px;
 
     /* bottom: 0px; */
-    right: 130px;
+    /* right: 130px;
     width: 400px;
-    top: 200px;
+    /* top: 200px;----- desktop version */
 
+}
+
+
+
+/* tablet styles */
+
+@media only screen and (min-width:30em) {
+    h1 {
+        margin-top: 45px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    #first,
+    #last {
+
+        height: 40px;
+        font-size: 17px;
+        border-radius: 12px;
+        margin-left: 30px;
+
+    }
+
+    td button {
+        border-radius: 10px;
+        font-size: 17px;
+        padding: 5px;
+        height: 40px;
+
+    }
+
+
+    #bigContainer {
+        width: 500px;
+        height: 800px;
+
+    }
+
+    td {
+        font-size: 20px;
+        height: 25px;
+        width: 120px;
+        padding: 5px;
+
+    }
+
+
+    .delete-btn {
+        background: rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        font-size: 15px;
+        width: 30px;
+    }
+
+    th {
+        height: 20px;
+        border-bottom: 5px dotted #8FD7E8;
+        font-size: 25px;
+
+    }
+
+    .info {
+
+        font-size: 20px;
+        left: 530px;
+        top: 150px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px dotted #D0F1F2;
+        padding: 10px;
+
+
+        /* bottom: 0px; */
+        /* right: 130px;
+        width: 400px;
+        /* top: 200px;----- desktop version */
+
+    }
+
+}
+
+
+
+
+@media only screen and (min-width:60em) {
+    h1 {
+        margin-top: 40px;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    #first,
+    #last {
+        height: 45px;
+        font-size: 20px;
+        margin-left: 100px;
+
+    }
+
+    td button {
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 5px;
+        height: 40px;
+
+    }
+
+
+    #bigContainer {
+        margin-left: 50px;
+        width: 850px;
+        height: 550px;
+
+    }
+
+    td {
+        font-size: 20px;
+        height: 25px;
+        width: 220px;
+        padding: 5px;
+
+    }
+
+
+    .delete-btn {
+        background: rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        font-size: 20px;
+        width: 50px;
+    }
+
+    th {
+        height: 25px;
+        border-bottom: 5px dotted #8FD7E8;
+        font-size: 25px;
+
+    }
+
+    .info {
+
+        font-size: 25px;
+        left: 970px;
+        top: 150px;
+        width: 400px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px dotted #D0F1F2;
+        padding: 10px;
+    }
 }
